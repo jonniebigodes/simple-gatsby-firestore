@@ -1,0 +1,36 @@
+.list-item-content {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 24px 53px 24px 24px;
+  }
+  .list-item-content:hover i.delete {
+    visibility: visible;
+    opacity: 1;
+  }
+  .list-item-content i {
+    display: block;
+  }
+  .list-item-content i.person {
+    background: url("../../assets/images/person.svg") center/cover no-repeat;
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  .list-item-content i.delete {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 16px;
+    height: 20px;
+    background: url("../../assets/images/delete.svg") center/cover no-repeat;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  .list-item-content .text-container {
+    width: 100%;
+  }
+  

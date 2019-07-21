@@ -1,0 +1,31 @@
+.checkbox-input {
+    display: none;
+}
+.checkbox-label {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 2px solid #859EFF;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+    margin: 5px 16px 0 0;
+    display: block;
+}
+.checkbox-label::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 11px;
+    height: 8px;
+    z-index: 1;
+    background: url('../../assets/images/check-mark.svg') center / cover no-repeat;
+    display: none;
+}
+.checkbox-input + .checkbox-label{
+    background-color: #859EFF
+}
+.checkbox-input:checked+ label::before{
+    display: block;
+}
