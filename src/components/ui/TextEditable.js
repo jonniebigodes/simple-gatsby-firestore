@@ -6,12 +6,12 @@ const TextEditable = ({ data, multiline, textClass ,editTranscript}) => {
   const [edit, setEdit] = useState(false)
   const inputRef= useRef()
   const handleBlur = e => {
-    console.log(`blur entered`)
+    //console.log(`blur entered`)
 
     const currentTarget = e.currentTarget
     setTimeout(() => {
       if (!currentTarget.contains(document.activeElement)) {
-        console.log("should blur")
+        //console.log("should blur")
         setEdit(false)
         editTranscript({item:textClass,data:content})
       }
