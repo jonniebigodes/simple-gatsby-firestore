@@ -49,7 +49,7 @@ export class TranscriptionsProvider extends Component {
   }
   uploadTranscript = async () => {
     const {transcriptList}= this.state
-    console.log(`soon adding to server`)
+    // console.log(`soon adding to server`)
     if (transcriptList.length===0){
       return 
     }
@@ -79,7 +79,7 @@ export class TranscriptionsProvider extends Component {
   removeTranscript = value => {
     const { transcriptList } = this.state
     const newTranscripts = transcriptList.filter(x => x.id !== value)
-    console.log(newTranscripts)
+    //console.log(newTranscripts)
     this.setState({
       transcriptList: newTranscripts,
     })

@@ -6,7 +6,7 @@ import "./transition-item.css"
 const Transcription = ({ voice, text, transcriptid, deleteTranscript,updateTranscript }) => {
 
   const editTranscript=value=>{
-    console.log('editTranscript',value);
+    // console.log('editTranscript',value);
     updateTranscript({id:transcriptid,...value})
     
   }
